@@ -57,6 +57,9 @@ function App() {
     const value = calc.slice(0, -1);
 
     setCalc(value);
+
+    const results = "0";
+    setResult(results);
   }
 
   const revoverCalculator = () => {
@@ -76,7 +79,7 @@ function App() {
     <div className="App">
       <div className="calculator">
         <div className="display" >
-          {results ? <span>{'(' + results + ')'}</span> : ''}&nbsp;
+          {results ? <span>{'(' + results + ')'}</span> : 'Result:  '}&nbsp;
           {calc || "0"}
         </div>
 
